@@ -43,7 +43,7 @@ def getRatio(price_a, price_b):
     """ Get ratio of price_a and price_b """
     """ ------------- Update this function ------------- """
     if price_b == 0:
-        return (f"Denominator is 0.")
+        raise ZeroDivisionError("Division by zero is not allowed.")
     return price_a/price_b
 
 
